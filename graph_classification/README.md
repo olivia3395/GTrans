@@ -11,7 +11,6 @@ This repository provides the full experimental pipeline for:
 
 We recommend Python 3.7. Required packages:
 
-```bash
 pip install torch==1.7.1
 pip install cudatoolkit==11.0
 pip install opencv-python==4.5.3.56
@@ -23,7 +22,7 @@ pip install torch_sparse-0.6.8-cp37-cp37m-linux_x86_64.whl
 pip install torch_cluster-1.5.8-cp37-cp37m-linux_x86_64.whl
 pip install torch-geometric==1.6.3
  
-📂 Dataset
+Dataset
 All datasets used in this project are from torch_geometric.datasets and will be downloaded automatically to ../dataset/loaded/. Supported datasets:
 •	IMDB-BINARY
 •	IMDB-MULTI
