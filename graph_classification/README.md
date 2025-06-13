@@ -1,7 +1,5 @@
-# GTRANS + G-Mixup: Transferable Graphon Estimation for Graph Classification
-
-
-This repository provides the full experimental pipeline for:
+# GTRANS + G-Mixup: 
+## This repository provides the full experimental pipeline for:
 
 - Baseline GIN training  
 - G-Mixup without transfer  
@@ -89,28 +87,4 @@ python gmixup_transfer.py \
 ```
 
 ---
-
-## Results Summary
-
-| Dataset       | GTRANS-GW | GTRANS-EGW | NS    | USVT  | ICE   | SAS   |
-| ------------- | --------- | ---------- | ----- | ----- | ----- | ----- |
-| IMDB-BINARY   | **76.30** | **76.80**  | 72.90 | 73.85 | 74.30 | 74.25 |
-| IMDB-MULTI    | **50.47** | **51.27**  | 43.80 | 48.00 | 43.90 | 44.10 |
-| PROTEINS-FULL | **69.33** | 68.52      | 63.18 | 65.11 | 65.38 | 65.25 |
-
----
-
-## Project Structure
-
-```
-├── README.md
-├── run_vanilla.sh
-├── run_gmixup.sh
-├── gmixup_transfer.py
-├── gmixup_no_transfer_baseline.py
-├── dataset/
-│   └── loaded/
-├── assets/
-│   └── gtrans_workflow.png
-```
 
