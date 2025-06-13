@@ -37,30 +37,8 @@ We randomly mask 10% of edges in the upper triangle of each adjacency matrix to 
 
 ## Evaluation Metrics
 
-We follow the AUC evaluation protocol:
 
-Let **P̂<sub>ij</sub>** be the estimated edge probability.
-
-Use held-out entries **(i, j)** with known ground-truth label **A<sub>ij</sub> ∈ {0, 1}**.
-
-To compute the ROC curve, we vary the threshold **t ∈ (0, 1)** and calculate:
-
-- **False Positive Rate (FPR)**:
-  
-  FPR(t) =  
-  ∑<sub>i,j</sub> 1( P̂<sub>ij</sub> > t, A<sub>ij</sub> = 0, M<sub>ij</sub> = 0 )  
-  ÷  
-  ∑<sub>i,j</sub> 1( A<sub>ij</sub> = 0, M<sub>ij</sub> = 0 )
-
-- **True Positive Rate (TPR)**:
-  
-  TPR(t) =  
-  ∑<sub>i,j</sub> 1( P̂<sub>ij</sub> > t, A<sub>ij</sub> = 1, M<sub>ij</sub> = 0 )  
-  ÷  
-  ∑<sub>i,j</sub> 1( A<sub>ij</sub> = 1, M<sub>ij</sub> = 0 )
-
-The **Area Under the Curve (AUC)** is then computed as the area under the ROC curve across all thresholds.
-
+We follow the AUC evaluation protocol from the literature, where predicted edge probabilities are compared against held-out ground truth links, and the area under the ROC curve (AUC) is computed based on different decision thresholds.
 
 
 ---
