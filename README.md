@@ -27,7 +27,7 @@ Graphon models offer a nonparametric foundation for modeling large random graphs
 
 ## Experiments
 
-### 🔬 Simulation Results
+### Simulation Results
 - Tested on 10 benchmark graphons.
 - Robust to **domain shift**, **density shift**, and **source sample size variations**.
 - GTRANS outperforms baseline methods: NS, SAS, ICE, and USVT.
