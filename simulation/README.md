@@ -1,4 +1,4 @@
-# Simulation: Graphon-Based Transfer Learning under Structural Perturbation
+# Simulation: 
 
 This directory contains a complete suite of **R scripts** for simulating and evaluating our proposed **GTRANS** framework for **graphon estimation under transfer learning**. The experiments investigate performance across different conditions, such as varying **source sample size**, **graphon structural perturbation (λ)**, and **ablation of debiasing mechanisms**.
 
@@ -43,7 +43,7 @@ Our simulations target three main questions:
 
 ---
 
-## ⚙️ Usage
+## Usage
 
 
 Make sure the following R packages are installed:
