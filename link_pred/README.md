@@ -37,11 +37,31 @@ We randomly mask 10% of edges in the upper triangle of each adjacency matrix to 
 
 ## Evaluation Metrics
 
-We follow the AUC evaluation protocol from the literature ([61], [43]):
+We follow the AUC evaluation protocol:
 
-- Let \( \hat{P}_{ij} \) be the estimated edge probability
-- Use held-out entries \( (i,j) \) with known ground-truth label \( A_{ij} \in \{0, 1\} \)
-- Compute ROC curve over thresholds \( t \in (0,1) \), and then compute the **Area Under Curve (AUC)**
+Let **P̂<sub>ij</sub>** be the estimated edge probability.
+
+Use held-out entries **(i, j)** with known ground-truth label **A<sub>ij</sub> ∈ {0, 1}**.
+
+To compute the ROC curve, we vary the threshold **t ∈ (0, 1)** and calculate:
+
+- **False Positive Rate (FPR)**:
+  
+  FPR(t) =  
+  ∑<sub>i,j</sub> 1( P̂<sub>ij</sub> > t, A<sub>ij</sub> = 0, M<sub>ij</sub> = 0 )  
+  ÷  
+  ∑<sub>i,j</sub> 1( A<sub>ij</sub> = 0, M<sub>ij</sub> = 0 )
+
+- **True Positive Rate (TPR)**:
+  
+  TPR(t) =  
+  ∑<sub>i,j</sub> 1( P̂<sub>ij</sub> > t, A<sub>ij</sub> = 1, M<sub>ij</sub> = 0 )  
+  ÷  
+  ∑<sub>i,j</sub> 1( A<sub>ij</sub> = 1, M<sub>ij</sub> = 0 )
+
+The **Area Under the Curve (AUC)** is then computed as the area under the ROC curve across all thresholds.
+
+
 
 ---
 
@@ -55,7 +75,7 @@ We follow the AUC evaluation protocol from the literature ([61], [43]):
 | karate    | 0.7186 ± 0.15 | 0.7674 ± 0.12 | 0.8043 ± 0.11  | 0.6388 ± 0.11  | **0.8210 ± 0.1035** |
 | hamster   | 0.8264 ± 0.00 | **0.9513 ± 0.00** | 0.9331 ± 0.00  | 0.5108 ± 0.00  | 0.9395 ± 0.0047 |
 
-📌 **Figure**: See *Table D7* and *Figure D5* in the paper.
+**Figure**: See *Table D7* and *Figure D5* in the paper.
 
 ---
 
