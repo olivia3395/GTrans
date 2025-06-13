@@ -6,7 +6,7 @@
 
 ---
 
-## 🧠 Overview
+## Overview
 
 **GTRANS** is a novel transfer learning framework for estimating edge connection probabilities under the **graphon model**, specifically designed for **small-sample graphs**. We propose a method that leverages a **large source graph** via **Gromov-Wasserstein Optimal Transport**, with an **adaptive debiasing mechanism** to avoid negative transfer.
 
@@ -14,7 +14,7 @@ Graphon models offer a nonparametric foundation for modeling large random graphs
 
 ---
 
-## 🔧 Method Highlights
+## Method Highlights
 
 - **Neighborhood Smoothing** to obtain initial estimators of connection probabilities.
 - **(Entropic) Gromov-Wasserstein Distance** to align source and target latent structures.
@@ -25,14 +25,14 @@ Graphon models offer a nonparametric foundation for modeling large random graphs
 
 ---
 
-## 🧪 Experiments
+## Experiments
 
 ### 🔬 Simulation Results
 - Tested on 10 benchmark graphons.
 - Robust to **domain shift**, **density shift**, and **source sample size variations**.
 - GTRANS outperforms baseline methods: NS, SAS, ICE, and USVT.
 
-### 📊 Real-World Applications
+### Real-World Applications
 - Improved **graph classification** accuracy on:
   - IMDB-BINARY (↑ ~5%)
   - IMDB-MULTI
