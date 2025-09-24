@@ -34,7 +34,7 @@ Graphon models offer a nonparametric foundation for modeling large random graphs
 
 ### Real-World Applications
 - Improved **graph classification** accuracy on:
-  - IMDB-BINARY (↑ ~5%)
+  - IMDB-BINARY 
   - IMDB-MULTI
   - PROTEINS-FULL
 - Works with **G-Mixup** for graph augmentation.
