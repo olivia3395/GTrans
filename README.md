@@ -1,6 +1,4 @@
-# GTrans
-
-# GTRANS: Transfer Learning on Graphon Estimation
+# Transfer Learning on Edge Connecting Probability Estimation Under Graphon Model (NeurIPS'25)
 
 ![GTRANS Workflow](assets/gtrans_workflow.png)
 
