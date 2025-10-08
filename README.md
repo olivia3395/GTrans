@@ -12,31 +12,5 @@ Graphon models offer a nonparametric foundation for modeling large random graphs
 
 ---
 
-## Method Highlights
 
-- **Neighborhood Smoothing** to obtain initial estimators of connection probabilities.
-- **(Entropic) Gromov-Wasserstein Distance** to align source and target latent structures.
-- **Projection and Transfer** of source estimator onto target space via the learned alignment.
-- **Adaptive Debiasing Step** to correct target-specific patterns when domain shift is large.
-- **Theoretical guarantees** on alignment matrix stability.
-- **Plug-in ready** for graph classification and data augmentation tasks.
-
----
-
-## Experiments
-
-### Simulation Results
-- Tested on 10 benchmark graphons.
-- Robust to **domain shift**, **density shift**, and **source sample size variations**.
-- GTRANS outperforms baseline methods: NS, SAS, ICE, and USVT.
-
-### Real-World Applications
-- Improved **graph classification** accuracy on:
-  - IMDB-BINARY 
-  - IMDB-MULTI
-  - PROTEINS-FULL
-- Works with **G-Mixup** for graph augmentation.
-- Results generalize to both **social networks** and **biological graphs**.
-
----
-
+TO BE CONTINUED.
